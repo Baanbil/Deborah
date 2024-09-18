@@ -1,0 +1,78 @@
+body{
+  background-image: url(pexels-asadphoto-1024984.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+#welcome{
+  border: 2px solid pink;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  box-shadow: 10px 10px 20px;
+}
+#welcome button{
+  padding: 10px;
+  background-color: pink;
+  color: white;
+  font-weight: bold;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+#message{
+  width: 300px;
+  padding: 10px;
+  backdrop-filter: blur(5px);
+  color: white;
+  border-radius: 20px;
+  animation: 2s fadeIn forwards;
+  display: none;
+}
+@keyframes fadeIn {
+  from{opacity: 0}
+  to{opacity: 1}
+}
+#back{
+  display: none;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: pink;
+  color: white;
+  font-weight: bold;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+@keyframes rotate{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+#hint{
+  margin-top: 60px;
+  border: 2px solid pink;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  animation: moveBox 5s infinite alternate;
+}
+@keyframes moveBox {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(80px);
+  }
+}
